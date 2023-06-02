@@ -192,13 +192,11 @@ ul{
 #banner{
 	position: relative;
 	height: 506px;
-	max-width: 1440px;
 	width: 100%;
 }
 
 #img-banner{
 	height: 506px;
-	max-width: 1440px;
 	width: 100%;
 	transform: matrix(-1, 0, 0, 1, 0, 0);
 	object-fit: cover;
