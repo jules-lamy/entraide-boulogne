@@ -248,7 +248,7 @@ ul{
 }
 
 #bullets-homepage{
-	max-width: 603px;
+	width: 603px;
 
 }
 
@@ -303,10 +303,10 @@ ul{
 }
 	
 #final-bullets{
-	justify-content: space-between;
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
+	justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 #picture-hands{
