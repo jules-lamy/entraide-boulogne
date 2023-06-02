@@ -479,7 +479,7 @@ ul{
 }
 
 #infos-pratiques{
-	justify-content: space-between;
+	justify-content: space-around;
   align-items: top;
   display: flex;
   flex-wrap: wrap;
