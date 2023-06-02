@@ -303,7 +303,7 @@ ul{
 }
 	
 #final-bullets{
-	justify-content: space-around;
+	justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
