@@ -1,0 +1,644 @@
+body{
+	background-color: #F7F7F7;
+	margin: auto;
+}
+
+h1{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 44px;
+	text-align: center;
+	color: #08235E;
+}
+
+h2{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 33px;
+	color: #08235E;
+}
+
+.no-margin{
+	margin: 0px;
+}
+
+.center-text{
+	text-align: center;
+}
+
+ul{
+	padding-inline-start: 0px;
+}
+
+.presentation-text{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+	color: #08235E;
+}
+
+.presentation-text2{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: left;
+	color: #08235E;
+	margin: 0px;
+}
+
+.text{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #08235E;
+}
+
+.text2{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #08235E;
+	text-align: center;
+}
+
+#status{
+	height: 27px;
+	background-color: #e60000
+}
+
+#header{
+	width: auto;
+	height: 163px;
+	background: #FFFFFF;
+	position: relative;
+	z-index: 11;
+}
+
+#logo-header{
+	position: absolute;
+	width: 159px;
+	height: 136px;
+	left: calc(50% - 159px/2 + 0.5px);
+	top: 27px
+}
+
+#menu{
+	width: auto;
+	height: 76px;
+	background: #FFFFFF;
+	box-shadow: 0px 8px 17px -6px rgba(0, 0, 0, 0.15);
+	z-index: 10;
+	position: sticky;
+	top: 0px;
+}
+
+#menu-list{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 962px;
+	height: 42px;
+	text-align: center;
+}
+
+.btn-white{
+	display: block;
+	background: #FFFFFF;
+	border-radius: 50px;
+	text-decoration: none;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 22px;
+	color: #08235E;
+	padding:10px 30px 10px 30px;
+	margin:0px 5px 0px 5px;
+	transition-duration: 0.4s;
+}
+
+.btn-white:hover{
+	background: #EDEDED;
+}
+
+.btn-red{
+	display: block;
+	background: linear-gradient(90deg, #B20000 0%, #F10000 100%);
+	border-radius: 50px;
+	text-decoration: none;
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 22px;
+	color: #FFFFFF;
+	padding:10px 30px 10px 30px;
+	margin:0px 5px 0px 5px;
+	transition-duration: 0.1s;
+}
+
+.btn-red:hover{
+	background: #FFFFFF;
+	outline: 2px solid #B20000;
+	outline-offset: -2px;
+	border-radius: 50px;
+	color: #B20000;
+}
+
+.card{
+	background: #FFFFFF;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+
+.round{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px -2px rgba(0, 0, 0, 0.25);
+}
+
+.center{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.center-fixed{
+  	justify-content: center;
+  	align-items: center;
+  	display: flex;
+  	flex-wrap: wrap;
+  	width: 100%;
+}
+
+.list-inline{
+	list-style: none;
+	display: inline;
+}
+
+#banner{
+	position: relative;
+	height: 506px;
+	max-width: 1440px;
+	width: 100%;
+}
+
+#img-banner{
+	height: 506px;
+	max-width: 1440px;
+	width: 100%;
+	transform: matrix(-1, 0, 0, 1, 0, 0);
+	object-fit: cover;
+	z-index: 9;
+}
+
+#card-updates-global{
+	width: 409px;
+	height: 402px;
+	z-index: 8;
+	position: absolute;
+	top: 52px;
+	right: 80px;
+}
+
+.card-updates{
+	padding: 15px 20px 15px 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	margin-top: 9.5px ;
+	margin-bottom: 9.5px;
+	top: Opx;
+	position: relative;
+}
+
+#icon-depot{
+	position: absolute;
+	width: 136px;
+	height: 136px;
+	left: calc(50% - 136px/2 + 91.5px);
+	top: 61px;
+}
+
+#text-body{
+	margin-left: 5.5%;
+	margin-right: 5.5%;
+	position: relative;
+}
+
+#text-mentions{
+	margin-left: 15%;
+	margin-right: 15%;
+	position: relative;
+}
+
+.bullets li::marker {
+	color: #F10000;
+}
+
+#bullets-homepage{
+	max-width: 603px;
+
+}
+
+#footer{
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#mentions{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 27px;
+	color: #a8a8a8;
+	margin-top: 1%;
+}
+
+.icons{
+	width: 145px;
+	height: 145px;
+	border-radius:75.5px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px -2px rgba(0, 0, 0, 0.25);
+	align-items: flex-end;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.icon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+}
+
+.text-icons{
+	width: 145px;
+	height: 68px;
+	text-align: center;
+	margin-top: 162px;
+}
+
+.all-icons{
+	margin-top: 39px;
+	position: relative;
+}
+	
+#final-bullets{
+	justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#picture-hands{
+	align-items: center;
+	display: flex;
+	max-width: 619px;
+	max-height: 309px;
+	width: 100%;
+	height: 100%;
+}
+
+#hands{
+	max-width: 619px;
+	max-height: 309px;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	margin-top: 34px;
+	margin-bottom: 34px;
+	object-fit: cover;
+}
+
+#three-cards{
+	margin-bottom: 43px;
+	margin-top: 20px;
+	justify-content: space-around;
+  	align-items: center;
+  	display: flex;
+  	flex-wrap: wrap;
+  	width: 100%;
+}
+
+.card-presentation{
+	height: 480px;
+	width: 326px;
+	margin: 10px;
+}
+
+#card-alimentaire {
+  background-image: url(images/pictures/aide-alimentaire.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+#card-alimentaire:hover {
+  color: #FFFFFF;
+}
+
+#card-alimentaire:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+#card-alimentaire:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#card-vestimentaire {
+  background-image: url(images/pictures/aide-vestimentaire.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 35px;
+  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+#card-vestimentaire:hover {
+  color: #FFFFFF;
+}
+
+#card-vestimentaire:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+#card-vestimentaire:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#card-financière {
+  background-image: url(images/pictures/aide-financière.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -172px;
+  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: background-color 0.5s, color 0.5s;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(0, 0, 0, 0);
+  position: relative;
+}
+
+#card-financière:hover {
+  color: #FFFFFF;
+}
+
+#card-financière:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  transition: background-color 0.5s;
+}
+
+#card-financière:hover:before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.card-header{
+	background-image: url(images/elements/card-title.png);
+	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	width: 326px;
+ 	height: 90px;
+ 	margin-top: 0px;
+ 	position: relative;
+ 	z-index: 2;
+}
+
+.card-title{
+	height: 90px;
+}
+
+.text-card{
+	margin: 5px 20px 5px 20px;
+	width: 286px;
+	position: relative;
+	z-index: 2;
+}
+
+#infos-pratiques{
+	justify-content: space-between;
+  align-items: top;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#localisation{
+  background-image: url(images/pictures/map.png);
+  background-repeat: no-repeat;
+  background-size: 160%;
+  background-position-x: -55px;
+  background-position-y: -38px;
+  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: relative;
+  height: 464px;
+  width: 586px;
+  margin: 10px;
+}
+
+#search-bar{
+  height: 40px;
+  width: 530px;
+  margin: 20px 28px 20px 28px;
+  background: #F4F4F4;
+  box-shadow: 0px 3px 7px -1px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+
+#search-icon{
+	width: 23px;
+	height: 23px;
+	margin: 10px 14px 10px 13px;
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+}
+
+#search-text{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33px;
+	color: #5E5E5E;
+	margin: 0px;
+	position: relative;
+	display: inline;
+	vertical-align: middle;
+}
+
+#contact{
+	width: 640px;
+	height: 436px;
+}
+
+.contact-infos{
+	width: 546px;
+	height: 145px;
+	display: flex;
+	justify-content: left;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-left: 77px;
+}
+
+.contact-text{
+	float: right;
+	margin: 59px 0px 59px 5px;
+}
+
+.title-red{
+	text-align: center;
+	background: linear-gradient(90deg, #B20000 0%, #F10000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+#etageres{
+	height: 334px;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+	border-radius: 13px;
+}
+
+.text-image{
+	max-width: 588px;
+}
+
+.text-and-image{
+	justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#sacs{
+	height: 334px;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+	border-radius: 13px;
+}
+
+
+#actions{
+	justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 798px;
+  margin: auto;
+  text-align: center;
+}
+
+.action{
+	width: 354px;
+  height: 115px;
+  background: #FFFFFF;
+  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 23px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.action-title{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  margin-right: auto;
+  color: #08235E;
+  text-align: left;
+}
+
+.action-icon{
+	margin-left: 18px;
+  margin-right: 18px;
+}
+
+#haWidget{
+	width: 100%;
+	height: 1240px;
+	border: none;
+	margin-top: -30px;
+}
+
+.link-mention{
+	background: linear-gradient(90deg, #B20000 0%, #F10000 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+.title-mention{
+	margin-top: 28px;
+	margin-bottom: -10px;
+}
