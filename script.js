@@ -26,7 +26,7 @@ function updateStatus() {
   else if (currentDate >= exceptionClosedStartDate && currentDate <= exceptionClosedEndDate) {
     isOpen = false;
     backgroundColor = '#e60000';
-    statusText = "L'Entraide est fermée pour tous vos dépôts jusqu'au 4 septembre";
+    statusText = "L'Entraide est fermée pour tous vos dépôts jusqu'au samedi 9 septembre";
   }
 
   // Vérifier si l'Entraide est ouverte pour la période habituelle
