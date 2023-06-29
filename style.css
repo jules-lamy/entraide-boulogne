@@ -74,6 +74,17 @@ ul{
 	text-align: center;
 }
 
+.text3{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 22px;
+	color: #08235E;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 #status{
 	height: 40px;
 	background-color: #e60000
@@ -497,7 +508,7 @@ ul{
 }
 
 #localisation{
-  background-image: url(images/pictures/map.down.png);
+  background-image: url(images/pictures/map.png);
   background-repeat: no-repeat;
   background-size: 160%;
   background-position-x: -55px;
