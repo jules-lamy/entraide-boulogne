@@ -77,3 +77,15 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+
+
+// Slider Home Page // 
+function Previous() {
+  document.getElementById("slides").style.transform = "translateX(0px)";
+}
+
+function Next() {
+  document.getElementById("slides").style.transform = "translateX(-1230px)";
+}
+

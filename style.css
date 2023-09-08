@@ -55,6 +55,29 @@ ul{
 	margin: 0px;
 }
 
+.presentation-text3{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: left;
+	color: #ffffff;
+	margin: 0px;
+	margin-left: 30px;
+}
+
+.slide-title{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 15px;
+	text-align: left;
+	color: #ffffff;
+	margin-left: 30px;
+}
+
 .text{
 	font-family: 'Avenir';
 	font-style: normal;
@@ -204,44 +227,83 @@ ul{
   position: relative;
   height: 506px;
   width: 100%;
+  background: linear-gradient(180deg, #F7F7F7 0%, #DFDFDF 100%);
+  box-shadow: 0px -8px 17px -6px rgba(0, 0, 0, 0.15) inset;
 }
 
-#img-banner {
-  height: 506px;
-  width: 100%;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  object-fit: cover;
-  z-index: 1;
+.slider{
+	width: auto;
+	overflow: hidden;
+	position: relative;
 }
 
-#card-updates-global {
-  position: absolute;
-  top: 50%;
-  right: 80px;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 409px;
+#slides {
+    width: 3815px;
+    transform: translateX(0px);
+	transition: transform 0.5s ease;
 }
 
-.card-updates {
-  padding: 15px 20px 15px 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
-  position: relative;
+.slide {
+    width: 575px;
+    height: 384px;
+    flex-shrink: 0;
+    float: left;
+    margin: 25px 20px 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
 }
 
-#special-event{
-	margin-top: 10px;
-	text-align: center;
-	background: linear-gradient(90deg, #B20000 0%, #F10000 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
-	text-transform: uppercase;
+.cont-btn {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Impact', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    font-stretch: condensed;
+    color: #999999;
+}
+
+.btn-nav-left{
+    margin-left: 30px;
+	width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #FFFFFF66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+
+
+.btn-nav-right {
+    margin-right: 30px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    background-color: #FFFFFF66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+    transition-duration: 0.5s;
+}
+
+.btn-nav-left:hover{
+	background-color: #FFFFFFE5;
+}
+
+.btn-nav-right:hover{
+    background-color: #FFFFFFE5;
 }
 
 #icon-depot{
