@@ -72,10 +72,11 @@ ul{
 	font-style: normal;
 	font-weight: 800;
 	font-size: 32px;
-	line-height: 15px;
+	line-height: 40px;
 	text-align: left;
 	color: #ffffff;
 	margin-left: 30px;
+	margin-bottom: 0px;
 }
 
 .text{
@@ -231,79 +232,122 @@ ul{
   box-shadow: 0px -8px 17px -6px rgba(0, 0, 0, 0.15) inset;
 }
 
-.slider{
-	width: auto;
-	overflow: hidden;
-	position: relative;
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 460px;
 }
 
-#slides {
-    width: 3815px;
-    transform: translateX(0px);
-	transition: transform 0.5s ease;
+.slider {
+    width: 100%;
+    max-width: 1300px;
+    height: 400px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+}
+
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
 }
 
 .slide {
-    width: 575px;
-    height: 384px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
-    float: left;
-    margin: 25px 20px 25px 20px;
-    border-radius: 20px;
-    box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
-}
-
-.cont-btn {
     width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
+    height: 400px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+#slides__1{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/open.jpg);
+	background-size: cover;
+	background-position: 0% 20%;
+}
+
+#slides__2{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/colis.jpg);
+	background-size: cover;
+	background-position: 0% 35%;
+}
+
+#slides__3{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/clothes.jpg);
+	background-size: cover;
+	background-position: 0% 30%;
+}
+
+#slides__4{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/Banner.png);
+	background-size: cover;
+	background-position: 0% 20%;
+}
+
+#slides__5{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/books.jpg);
+	background-size: cover;
+	background-position: 0% 100%;
+}
+
+.slide-text{
+	width: 80%;
+	margin-top: auto;
+	margin-bottom: 60px;
+}
+
+.slide a {
+    background: none;
+    border: none;
+}
+
+a.slide__prev,
+.slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Impact', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    font-stretch: condensed;
-    color: #999999;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid rgba(255, 255, 255, 0.778);
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
-.btn-nav-left{
-    margin-left: 30px;
-	width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background-color: #FFFFFF66;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
-    transition-duration: 0.5s;
-}
-
-
-.btn-nav-right {
-    margin-right: 30px;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    background-color: #FFFFFF66;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; 
-    transition-duration: 0.5s;
-}
-
-.btn-nav-left:hover{
-	background-color: #FFFFFFE5;
-}
-
-.btn-nav-right:hover{
-    background-color: #FFFFFFE5;
+.slider::before,
+.slider::after {
+  content: '';
+  z-index: 1;
+  background: none;
+  pointer-events: none;
 }
 
 #icon-depot{
@@ -760,4 +804,6 @@ ul{
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
