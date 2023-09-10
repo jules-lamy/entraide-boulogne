@@ -55,6 +55,30 @@ ul{
 	margin: 0px;
 }
 
+.presentation-text3{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-align: left;
+	color: #ffffff;
+	margin: 0px;
+	margin-left: 30px;
+}
+
+.slide-title{
+	font-family: 'Avenir';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 40px;
+	text-align: left;
+	color: #ffffff;
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+
 .text{
 	font-family: 'Avenir';
 	font-style: normal;
@@ -204,44 +228,126 @@ ul{
   position: relative;
   height: 506px;
   width: 100%;
+  background: linear-gradient(180deg, #F7F7F7 0%, #DFDFDF 100%);
+  box-shadow: 0px -8px 17px -6px rgba(0, 0, 0, 0.15) inset;
 }
 
-#img-banner {
-  height: 506px;
-  width: 100%;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-  object-fit: cover;
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 460px;
+}
+
+.slider {
+    width: 100%;
+    max-width: 1300px;
+    height: 400px;
+    margin: 0px 20px 20px 20px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+	box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
+}
+
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0px;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+
+#slides__1{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/open.jpg);
+	background-size: cover;
+	background-position: 0% 20%;
+}
+
+#slides__2{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/colis.jpg);
+	background-size: cover;
+	background-position: 0% 35%;
+}
+
+#slides__3{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/clothes.jpg);
+	background-size: cover;
+	background-position: 0% 30%;
+}
+
+#slides__4{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/Banner.png);
+	background-size: cover;
+	background-position: 0% 20%;
+}
+
+#slides__5{
+	background:linear-gradient(18deg, rgba(0, 0, 0, 0.80) 21.37%, rgba(0, 0, 0, 0.00) 56.6%) ,url(images/pictures/books.jpg);
+	background-size: cover;
+	background-position: 0% 100%;
+}
+
+.slide-text{
+	width: 80%;
+	margin-top: auto;
+	margin-bottom: 60px;
+}
+
+.slide a {
+    background: none;
+    border: none;
+}
+
+a.slide__prev,
+.slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+
+a.slide__next,
+.slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+
+.slider::before,
+.slider::after,
+.slide__prev,
+.slide__next {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid rgba(255, 255, 255, 0.778);
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.slider::before,
+.slider::after {
+  content: '';
   z-index: 1;
-}
-
-#card-updates-global {
-  position: absolute;
-  top: 50%;
-  right: 80px;
-  transform: translateY(-50%);
-  z-index: 2;
-  width: 409px;
-}
-
-.card-updates {
-  padding: 15px 20px 15px 20px;
-  background: #FFFFFF;
-  box-shadow: 0px 7px 23px -3px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  margin-top: 9.5px;
-  margin-bottom: 9.5px;
-  position: relative;
-}
-
-#special-event{
-	margin-top: 10px;
-	text-align: center;
-	background: linear-gradient(90deg, #B20000 0%, #F10000 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	text-fill-color: transparent;
-	text-transform: uppercase;
+  background: none;
+  pointer-events: none;
 }
 
 #icon-depot{
@@ -698,4 +804,6 @@ ul{
   text-decoration: none;
   cursor: pointer;
 }
+
+
 
