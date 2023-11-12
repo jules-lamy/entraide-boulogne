@@ -135,7 +135,7 @@ ul{
 	height: 76px;
 	background: #FFFFFF;
 	box-shadow: 0px 8px 17px -6px rgba(0, 0, 0, 0.15);
-	z-index: 10;
+	z-index: 100;
 	position: sticky;
 	top: 0px;
 }
